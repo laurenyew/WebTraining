@@ -1,2 +1,2 @@
-# WebsitePortfolio
-Repo for website portfolio work
+# WebTraining
+Repo for web training work
