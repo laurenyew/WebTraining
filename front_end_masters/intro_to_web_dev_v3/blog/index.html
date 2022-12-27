@@ -5,9 +5,76 @@
         <meta charset="UTF-8" />
         <!-- I'm going to handle mobile, don't handle mobile for me-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>My Super Cool Blog</title>
+        <title>Android, iOS, and more! - A Blog by Lauren Yew</title>
     </head>
     <body>
-        <a href="about.html">About</a>
+        <h1>Android, iOS, and more! - A Blog by Lauren Yew</h1>
+
+        <a href="about.html">About Me</a>
+
+        <h2>Intro</h2>
+        <p>This is a personal blog post website around Android, iOS, and other tech topics.</p>
+
+        <div class="post-preview">
+            <a href="https://www.slideshare.net/LaurenYew/understanding-ios-from-an-android-perspective"><h1>Understanding iOS from an Android perspective</h1></a>
+            <h2>Author: Lauren Yew</h2>
+            <h3>Date Posted: Sept 15, 2021</h3>
+            <p>A Busy Developer's Guide to native iOS apps</p>
+            <p>Android vs. iOS. It's a frequent discussion between developers on which is better, faster, easier to develop with. In general, developers pick one platform to focus on—however, it's imperative for strong developers to have an understanding of both platforms and be able to see a problem from both perspectives. The platforms are unique but also evolve together, matching features. As a Senior Software Engineer at The New York Times, I develop both native Android and iOS core libraries for our apps. In this presentation, we will discuss some of the similarities and differences between Android & iOS and give developers a better understanding of native iOS from an Android perspective.</p>
+            <p>In this presentation, you will learn about:</p>
+            <li>Design Element differences</li>
+            <li>Swift vs. Kotlin</li>
+            <li>iOS app setup & structure (Xcode vs. Gradle)</li>
+            <li>iOS app lifecycles</li>
+            <li>MVVM</li>
+            <li>Jetpack Compose vs. Swift UI</li>
+            <p>By the end of this talk, you will be able to better understand Swift code, bring both platform perspectives to product and architecture conversations, and have more confidence contributing to iOS apps and libraries.</p>
+        </div>
+
+        <div class="post-preview">
+            <a href="https://www.slideshare.net/LaurenYew/threading-made-easy-a-busy-developers-guide-to-kotlin-coroutines-249477611/1"><h1>Threading Made Easy! A Busy Developer's Guide to Kotlin Coroutines</h1></a>
+            <h2>Author: Lauren Yew</h2>
+            <h3>Date Posted: June 25, 2021</h3>
+            <p>Kotlin Coroutines is a powerful threading library for Kotlin, released by JetBrains in 2018. At The New York Times, we recently migrated our core libraries and parts of our News app from RxJava to Kotlin Coroutines. In this talk we'll share lessons learned and best practices to understand, migrate to, and use Kotlin Coroutines & Flows.</p>
+            <p>In this presentation, you will learn:</p>
+                
+            <li>What Coroutines are and how they function</li> 
+              <li>How to use Kotlin Coroutines & Flows (with real world examples and demos)</li> 
+              <li>Where and why you should use Coroutines & Flows in your app</li> 
+              <li>How to avoid the pitfalls of Coroutines</li> 
+              <li>Kotlin Coroutines vs. RxJava</li> 
+              <li>Lessons learned from migrating to Kotlin Coroutines from RxJava in large legacy projects & libraries</li> 
+             <p>By the end of this talk, you will be able to apply Kotlin Coroutines to your own app, run the provided sample code yourself, and convince your team to give Kotlin Coroutines a try!</p>
+        </div>
+
+        <div class="post-preview">
+            <img src="https://miro.medium.com/max/1400/1*ZIUZ3cfImfiR3bqKnByfOg.webp"/>
+            <a href="https://open.nytimes.com/4-steps-to-win-advocates-and-implement-a-technical-change-b2a9b922559b"><h1>4 Steps to Win Advocates and Implement a Technical Change</h1></a>
+            <h2>Author: The NYT Open Team & Lauren Yew</h2>
+            <h3>Date Posted: May 13, 2021</h3>
+            <p>Last year, many of the Android teams at The New York Times had an ongoing debate: should we use RxJava or Kotlin Coroutines and Flow? While the question was simple, the answer and technical solution were not. We were using both in our client apps and RxJava in our core libraries, which meant we had two fragmented technologies to support.</p>
+            <p>My team, the App Platforms team, manages the core libraries and features that are used by Times mobile app teams, and part of our responsibility is to model technical best practices. We wanted to work with our Times Android colleagues to choose the best solution. Many of our colleagues believed that migrating to Kotlin Coroutines would improve performance, the readability of our code, increase developer velocity and speed up unit testing. But, some of our colleagues preferred to stick with RxJava because of its many features. We needed to first build consensus across all of the Android teams on what technology to use as a best practice.</p>
+            <p>The App Platforms team's hypothesis was that Coroutines would be the better option for our core libraries, however, we couldn't rush towards implementation because any technical change to our core libraries could have cross-departmental effects. In addition to building consensus, we had to articulate how the change was worth the product roadmap disruption and the shift in developer practices, and how it would positively impact our business goals.</p>
+            <p>Here's how we did it...</p>
+        </div>
+
+        <div class="post-preview">
+            <img src="https://miro.medium.com/max/1400/1*l7MB2SSUCDMorr19f7zIRQ.webp"/>
+            <a href="https://open.nytimes.com/threading-at-the-speed-of-light-6ae31257307a"><h1>Threading at the Speed of Light (Kotlin Coroutines Migration from RxJava)</h1></a>
+            <h2>Author: The NYT Open Team & Lauren Yew</h2>
+            <h3>Date Posted: May 13, 2021</h3>
+            <p>When a reader opens The New York Times on Android, our app makes a series of calls to our core libraries. Each feature that is rendered for the reader might depend on multiple back-end calls, user input and other parallel business logic flows. To ensure that our readers are served with a fast and reliable mobile app experience, we do a lot of asynchronous work, or threading, within our app. We use our threading technology to not only offload network calls and heavy business logic, but to also chain together complex sets of processes that are updated at different times and can affect multiple observing business logic flows.</p>
+            <p>For the last few years, The Times's Android teams have used both RxJava and Kotlin Coroutines and Flow for threading in the core libraries that power our News, Cooking and Games apps. To unify our stack, we decided to choose one technology and dug into the performance differences between RxJava and Coroutines.</p>
+            <p>While RxJava was a powerful tool, its CPU, thread usage and general complexity as a language made it an increasingly cumbersome technology for our needs. We have monitored the progress of Kotlin Coroutines and Flow and determined that it not only covered all of our feature needs, but it also had significant performance improvements.</p>
+            <p>In order to iteratively migrate our apps and libraries to Coroutines, we first needed to update our core libraries. Here are some best practices we developed during our migration....</p>
+        </div>
+        
+        <div class="post-preview">
+            <a href="https://open.nytimes.com/innovating-from-home-maker-week-at-the-new-york-times-50ecfa38aca1"><h1>Innovating from Home: Maker Week at The New York Times - NYT Cooking — Calories & Grocery Features</h1></a>
+            <h2>Author: The NYT Open Team</h2>
+            <h3>Date Posted: Aug 20, 2020</h3>
+            <p>Maker Week is an annual tradition: New York Times employees in Data, Design, Marketing, Product and Technology are given the freedom to step away from their normal responsibilities and work on self-directed projects. The event is time for our colleagues to experiment with new ideas or iterate on old ones. This year, our colleagues worked on over 96 projects and participated in 24 peer-led workshops over five meeting-free days.</p>
+            <p>We asked some of our colleagues to share their projects and what they learned...</p>
+        </div>
     </body>
 </html>
