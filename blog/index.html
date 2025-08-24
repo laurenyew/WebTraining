@@ -1,96 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lauren Yew's Blog</title>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <section>
-        <h1>Lauren Yew</h1>
+      <h1 class="title">Lauren Yew</h1>
+      <p class="subtitle">
         Engineering Manager (Games App Squad) at The New York Times
-    </div>
-    <img src="images/ProfilePhotoCircle.png" style="width: 300px; height: 300px;">
+      </p>
+    </section>
+    <img
+      src="images/ProfilePhotoCircle.png"
+      style="width: 300px; height: 300px"
+    />
     <section class="info_section">
-        <h1>Bio</h1>
-        <div class="info_text_section">
-            Engineering Manager with 11 years of software development experience developing and architecting Android and iOS mobile apps and libraries. I’m deeply committed to driving innovation, fostering collaborate environments, growing engineers, and refining development processes. I am currently managing the Games Android team at The New York Times.
-        </div>
-        <div>
-            Skills: Software Engineering Management, Engineer Hiring, Mobile Development, Android Development, Software Architecture, Software Development Lifecycle, Process Optimization, Agile Methodologies, Strategic Leadership, Emotional Intelligence
-        </div class="info_text_section">
+      <h1 class="info_section_title">Bio</h1>
+      <p class="info_text_section">
+        Engineering Manager with 11 years of software development experience
+        developing and architecting Android and iOS mobile apps and libraries.
+        I’m deeply committed to driving innovation, fostering collaborate
+        environments, growing engineers, and refining development processes. I
+        am currently managing the Games Android team at The New York Times.
+      </p>
+      <p class="info_text_section">
+        Skills: Software Engineering Management, Engineer Hiring, Mobile
+        Development, Android Development, Software Architecture, Software
+        Development Lifecycle, Process Optimization, Agile Methodologies,
+        Strategic Leadership, Emotional Intelligence
+      </p>
+      <ul>
+        <li><a href="https://www.linkedin.com/in/laurenyew/">LinkedIn</a></li>
+        <li><a href="https://github.com/laurenyew">Github</a></li>
+      </ul>
+    </section>
+    <section class="info_section">
+      <h1 class="info_section_title">Speaking</h1>
+      <article class="info_detail_section">
+        <h2 class="info_detail_title">
+          Understanding native iOS from an Android perspective
+        </h2>
+        <a
+          href="https://www.slideshare.net/LaurenYew/understanding-ios-from-an-android-perspective"
+          >SlideShare</a
+        >,
+        <a href="https://github.com/laurenyew/PetAdoptSampleApp">Sample Code</a>
         <ul>
-            <li><a href="https://www.linkedin.com/in/laurenyew/">LinkedIn</a></li>
-            <li><a href="https://github.com/laurenyew">Github</a></li>
+          <li>Chicago Roboto - Sept 2021</li>
+          <li>
+            <a
+              href="https://gdg.community.dev/events/details/google-gdg-dallas-presents-understanding-native-ios-from-an-android-perspective/"
+              >Google Developer Group Dalls (August 2021)</a
+            >.
+            <a href="https://www.youtube.com/watch?v=AW95G2RR7VU"
+              >Video Recording</a
+            >
+          </li>
         </ul>
+      </article>
+      <article class="info_detail_section">
+        <h2 class="info_detail_title">
+          Threading Made Easy! A Busy Developer’s Guide to Kotlin Coroutines &
+          Flows + RxJava migration
+        </h2>
+        <a href="https://vimeo.com/580376401">360 AnDevCon 2021 Recording</a>,
+        <a href="https://www.slideshare.net/secret/40tiKBfk3yNI1B">SlideShare</a
+        >,
+        <a
+          href="https://github.com/laurenyew/PetAdoptSampleApp/tree/develop/android"
+          >Sample Code</a
+        >
+        <ul>
+          <li>360 AnDevCon 2021 Conference (July 2021)</li>
+          <li>
+            <a href="https://www.meetup.com/gdgdallas/events/278836326/"
+              >Google Developer Group Dallas (June 2021)</a
+            >
+          </li>
+          <li>
+            <a href="https://www.meetup.com/gdgaustin/events/279131227/"
+              >Google Developer Group Austin (July 2021)</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.meetup.com/Austin-Android-Developer-Meetup/events/279200728/"
+              >Austin Android Developer Group (July 2021)</a
+            >
+          </li>
+        </ul>
+      </article>
+      <article class="info_detail_section">
+        <h2 class="info_detail_title">
+          Threading Made Easy: A Busy Developer’s Guide to Kotlin Coroutines
+        </h2>
+        <ul>
+          <li>UT Mobile App Developer Conference (MADCon) (Mar 2019)</li>
+          <li>
+            <a
+              href="https://www.meetup.com/Austin-Android-Developer-Meetup/events/259316686/"
+              >Austin Android Developers Meetup (Mar 2019)</a
+            >
+          </li>
+          <li>
+            <a href="https://www.meetup.com/gdgaustin/events/259531184/"
+              >Google Developer Group Austin (May 2019)</a
+            >
+          </li>
+          <li>
+            <a href="https://www.meetup.com/gdgdallas/events/262286209/"
+              >Google Developer Group Dallas (July 2019)</a
+            >
+          </li>
+        </ul>
+      </article>
     </section>
     <section class="info_section">
-        <h1>Speaking</h1>
-        <article class="info_detail_section">
-            <h2>Understanding native iOS from an Android perspective</h2>
-            <a href="https://www.slideshare.net/LaurenYew/understanding-ios-from-an-android-perspective">SlideShare</a>, <a href="https://github.com/laurenyew/PetAdoptSampleApp">Sample Code</a>
-            <ul>
-                <li>Chicago Roboto - Sept 2021</li>
-                <li><a href="https://gdg.community.dev/events/details/google-gdg-dallas-presents-understanding-native-ios-from-an-android-perspective/">Google Developer Group Dalls (August 2021)</a>. <a href="https://www.youtube.com/watch?v=AW95G2RR7VU">Video Recording</a></li>
-            </ul>
-        </article>
-        <article class="info_detail_section">
-            <h2>Threading Made Easy! A Busy Developer’s Guide to Kotlin Coroutines & Flows + RxJava migration</h2>
-            <a href="https://vimeo.com/580376401">360 AnDevCon 2021 Recording</a>, <a href="https://www.slideshare.net/secret/40tiKBfk3yNI1B">SlideShare</a>, <a href="https://github.com/laurenyew/PetAdoptSampleApp/tree/develop/android">Sample Code</a>
-            <ul>
-                <li>360 AnDevCon 2021 Conference (July 2021)</li>
-                <li><a href="https://www.meetup.com/gdgdallas/events/278836326/">Google Developer Group Dallas (June 2021)</a></li>
-                <li><a href="https://www.meetup.com/gdgaustin/events/279131227/">Google Developer Group Austin (July 2021)</a></li>
-                <li><a href="https://www.meetup.com/Austin-Android-Developer-Meetup/events/279200728/">Austin Android Developer Group (July 2021)</a></li>
-            </ul>
-        </article>
-        <article class="info_detail_section">
-            <h2>Threading Made Easy: A Busy Developer’s Guide to Kotlin Coroutines</h2>
-            <ul>
-                <li>UT Mobile App Developer Conference (MADCon) (Mar 2019)</li>
-                <li><a href="https://www.meetup.com/Austin-Android-Developer-Meetup/events/259316686/">Austin Android Developers Meetup (Mar 2019)</a></li>
-                <li><a href="https://www.meetup.com/gdgaustin/events/259531184/">Google Developer Group Austin (May 2019)</a></li>
-                <li><a href="https://www.meetup.com/gdgdallas/events/262286209/">Google Developer Group Dallas (July 2019)</a></li>
-            </ul>
-        </article>
+      <h1 class="info_section_title">Blog Posts</h1>
+      <article class="info_detail_section">
+        <h2 class="info_detail_title">NYT Open Blog Posts</h2>
+        <ul>
+          <li>
+            <a
+              href="https://open.nytimes.com/4-steps-to-win-advocates-and-implement-a-technical-change-b2a9b922559b"
+              >4 Steps to Win Advocates and Implement a Technical Change
+              (2021)</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://open.nytimes.com/threading-at-the-speed-of-light-6ae31257307a"
+              >Threading at the Speed of Light (Kotlin Coroutines Migration from
+              RxJava) (2021)</a
+            >
+          </li>
+        </ul>
+      </article>
+      <article class="info_detail_section">
+        <h2 class="info_detail_title">
+          Kotlin Migration Blog Post Series (3 part)
+        </h2>
+        <ul>
+          <li>
+            <a
+              href="https://medium.com/@laurenyew/why-migrate-your-android-app-to-kotlin-2220218952a9"
+              >Why migrate your Android app to Kotlin? (2019)</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://medium.com/@laurenyew/how-to-advocate-for-kotlin-migration-sample-migration-process-3d178d8b638"
+              >How to advocate for Kotlin migration + sample migration process
+              (2019)</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://medium.com/@laurenyew/12-steps-to-convert-your-java-class-to-kotlin-the-right-way-9a718cfb498d?sk=b974e7681d164652494476f545b6100b"
+              >12 Steps to convert your Java class to Kotlin the right way
+              (2019)</a
+            >
+          </li>
+        </ul>
+      </article>
+      <article class="info_detail_section">
+        <h2 class="info_detail_title">Google I/O 2019</h2>
+        <ul>
+          <li>
+            <a
+              href="https://medium.com/ua-makers/impressions-from-google-i-o-2019-android-q-dark-theme-5af500f87161"
+              >Impressions from Google I/O 2019: Android Q — Dark Theme
+              (2019)</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://medium.com/ua-makers/impressions-from-google-i-o-2019-android-q-gesture-navigation-80c28ce45b1a"
+              >Impressions from Google I/O 2019: Android Q — Gesture Navigation
+              (2019)</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://medium.com/p/impressions-from-google-i-o-2019-flutter-9cd4b72edefb?source=email-2e7a92038d8--writer.postDistributed&sk=abeb951c0fc5be66d4e5641960a08698"
+              >Impressions from Google I/O 2019: Flutter (2019).</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://medium.com/@laurenyew/impressions-of-google-i-o-2019-kotlin-coroutines-19b6af1e0e3"
+              >Impressions from Google I/O 2019: Kotlin Coroutines (2019)</a
+            >
+          </li>
+        </ul>
+      </article>
+      <article class="info_detail_section">
+        <h2 class="info_detail_title">Mentions in Blog Posts</h2>
+        <ul>
+          <li>
+            <a
+              href="https://open.nytimes.com/innovating-from-home-maker-week-at-the-new-york-times-50ecfa38aca1"
+              >Innovating from Home: Maker Week at The New York Times - NYT
+              Cooking — Calories & Grocery Features (August 2020)</a
+            >
+          </li>
+        </ul>
+      </article>
     </section>
-    <section class="info_section">
-        <h1>Blog Posts</h1>
-        <article class="info_detail_section">
-            <h2>NYT Open Blog Posts</h2>
-            <ul>
-                <li><a href="https://open.nytimes.com/4-steps-to-win-advocates-and-implement-a-technical-change-b2a9b922559b">4 Steps to Win Advocates and Implement a Technical Change (2021)</a></li>
-                <li><a href="https://open.nytimes.com/threading-at-the-speed-of-light-6ae31257307a">Threading at the Speed of Light (Kotlin Coroutines Migration from RxJava) (2021)</a></li>
-            </ul>
-        </article>
-        <article class="info_detail_section">
-            <h2>Kotlin Migration Blog Post Series (3 part)</h2>
-            <ul>
-                <li><a href="https://medium.com/@laurenyew/why-migrate-your-android-app-to-kotlin-2220218952a9">Why migrate your Android app to Kotlin? (2019)</a></li>
-                <li><a href="https://medium.com/@laurenyew/how-to-advocate-for-kotlin-migration-sample-migration-process-3d178d8b638">How to advocate for Kotlin migration + sample migration process (2019)</a></li>
-                <li><a href="https://medium.com/@laurenyew/12-steps-to-convert-your-java-class-to-kotlin-the-right-way-9a718cfb498d?sk=b974e7681d164652494476f545b6100b">12 Steps to convert your Java class to Kotlin the right way (2019)</a></li>
-            </ul>
-        </article>
-        <article class="info_detail_section">
-            <h2>Google I/O 2019</h2>
-            <ul>
-                <li><a href="https://medium.com/ua-makers/impressions-from-google-i-o-2019-android-q-dark-theme-5af500f87161">Impressions from Google I/O 2019: Android Q — Dark Theme (2019)</a></li>
-                <li><a href="https://medium.com/ua-makers/impressions-from-google-i-o-2019-android-q-gesture-navigation-80c28ce45b1a">Impressions from Google I/O 2019: Android Q — Gesture Navigation (2019)</a></li>
-                <li><a href="https://medium.com/p/impressions-from-google-i-o-2019-flutter-9cd4b72edefb?source=email-2e7a92038d8--writer.postDistributed&sk=abeb951c0fc5be66d4e5641960a08698">Impressions from Google I/O 2019: Flutter (2019).</a></li>
-                <li><a href="https://medium.com/@laurenyew/impressions-of-google-i-o-2019-kotlin-coroutines-19b6af1e0e3">Impressions from Google I/O 2019: Kotlin Coroutines (2019)</a></li>
-            </ul>
-        </article>
-        <article class="info_detail_section">
-            <h2>Mentions in Blog Posts</h2>
-            <ul>
-                <li><a href="https://open.nytimes.com/innovating-from-home-maker-week-at-the-new-york-times-50ecfa38aca1">Innovating from Home: Maker Week at The New York Times - NYT Cooking — Calories & Grocery Features (August 2020)</a></li>
-            </ul>
-        </article>
-    </section>  
 
     <section class="nav_section">
-        <h1>Navigation</h1>
-        <a href="projects.html">My Projects</a>
+      <h1 class="info_section_title">Navigation</h1>
+      <ul>
+        <li><a href="projects.html">My Projects</a></li>
+      </ul>
     </section>
-</body>
+  </body>
 </html>
